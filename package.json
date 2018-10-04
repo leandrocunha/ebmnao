@@ -4,7 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css-production": "node-sass-chokidar ./src/sass -o ./dist --output-style compressed",
+    "build-css": "node-sass-chokidar ./src/sass -o ./dist",
+    "build-js": "webpack --config webpack.config.production.js",
+    "build-js-production": "webpack --config webpack.config.production.js",
+    "build": "npm-run-all build-css-production build-js-production",
+    "watch-css": "npm run build-css && node-sass-chokidar ./src/sass -o ./dist --watch --recursive",
+    "start-js": "webpack-dev-server -d --config webpack.config.development.js",
+    "start": "npm-run-all -p watch-css start-js",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch"
   },
   "repository": {
     "type": "git",
