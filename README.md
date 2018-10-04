@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+# #EBMNAO
 
-You can use the [editor on GitHub](https://github.com/leandrocunha/ebmnao/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**_"Uma vez Flamengo, Sempre Flamengo"_**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Chegou a hora de dar o troco ao pior presidente da história do Flamengo. Foram 5 anos de derrotas e apatia, time sem garra, sem ânimo e nenhum vontade de ser e representar o maior time de futebol do mundo.
 
-### Markdown
+Se você é Rubro-Negro e está cansado desta gestão horrosa, vamos dar o troco, #EBMNAO
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[https://ebmnao.herokuapp.com/](https://ebmnao.herokuapp.com/)
 
-```markdown
-Syntax highlighted code block
+## Para rodar
 
-# Header 1
-## Header 2
-### Header 3
+1. Após clonar o repositório, instale as dependências
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+$ npm install
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+2. Para startar o servidor de desenvolvimento
 
-### Jekyll Themes
+```bash
+$ npm start
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/leandrocunha/ebmnao/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Motivação
 
-### Support or Contact
+Este projeto não tenho nenhum cunho político, não é apoiado por nenhuma chapa seja ela de oposição ou situação e nem mesmo pelo Clube de Regatas do Flamengo. A maior razão foi de participar do #hacktoberfest aproveitando o mês eleitoral e as eleições do Clube de Regatas do Flamengo que se aproxima.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Um projeto independente, de torcedor para para torcedor, de programador para programador.
+
+### #SRN
