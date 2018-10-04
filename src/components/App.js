@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import watermarkjs from 'watermarkjs';
-import Dropzone from 'react-dropzone';
+import React, { Component } from "react";
+import watermarkjs from "watermarkjs";
+import Dropzone from "react-dropzone";
 
 class App extends Component {
   constructor(props) {
@@ -9,12 +9,14 @@ class App extends Component {
   }
 
   applyWatermark(avatar) {
-    const watermark = './../images/moldura-ebm.png';
+    const watermark = "./../images/moldura-ebm.png";
 
     watermarkjs([avatar[0].preview, watermark])
       .image(watermarkjs.image.lowerRight())
-      .then((img) => {
-        document.getElementById('composite-image').appendChild(img);
+      .then(img => {
+        img.style.width = "300px";
+        img.style.height = "300px";
+        document.getElementById("composite-image").appendChild(img);
       });
   }
 
@@ -27,7 +29,9 @@ class App extends Component {
       <section>
         <h1>#EBMNAO</h1>
         <Dropzone onDrop={this.onDrop}>
-          <p>Try dropping some files here, or click to select files to upload.</p>
+          <p>
+            Try dropping some files here, or click to select files to upload.
+          </p>
         </Dropzone>
         <div id="composite-image" />
       </section>
