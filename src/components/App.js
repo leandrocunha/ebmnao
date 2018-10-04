@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   applyWatermark(avatar) {
-    const watermark = 'moldura-ebm.png';
+    const watermark = './../images/moldura-ebm.png';
 
     watermarkjs([avatar[0].preview, watermark])
       .image(watermarkjs.image.lowerRight())
