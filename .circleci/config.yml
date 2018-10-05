@@ -3,7 +3,7 @@ image: ubuntu:16.04
 jobs:
   lint:
     docker:
-      - image: node:9.8.0
+      - image: node:8.9.0
     steps:
       - checkout
       - run: |
