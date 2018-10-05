@@ -4,6 +4,7 @@
     "document": true,
     "fetch": true,
     "FileReader": true,
+    "gtag": true,
     "Image": true,
     "window": true
   },

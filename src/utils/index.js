@@ -9,6 +9,11 @@ function marcadagua(file) {
       const target = document.getElementById('ribbon');
       target.removeChild(target.firstChild);
       target.appendChild(img);
+      gtag('event', 'ribbon', {
+        event_label: watermark,
+        event_category: 'generated',
+        non_interaction: true,
+      });
     });
 }
 
@@ -38,7 +43,6 @@ function resize(file) {
       const imgfinal = new Image();
       imgfinal.src = URI;
 
-      // document.getElementById('ribbon').appendChild(imgfinal);
       marcadagua(URI);
     };
     reader.onerror = error => console.log(error);
