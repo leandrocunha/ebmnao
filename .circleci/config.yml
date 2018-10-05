@@ -1,11 +1,14 @@
 version: 2
 image: ubuntu:16.04
 jobs:
-  lint:
+  build:
     docker:
-      - image: node:8.9.0
+      - image: node:8.12.0
     steps:
       - checkout
-      - run: |
-        yarn
-        yarn lint
+      - run:
+          name: Install dependencies
+          command: yarn
+      - run:
+          name: Run Lint
+          command: yarn lint
