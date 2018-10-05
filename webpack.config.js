@@ -11,8 +11,8 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.(css|scss)$/,
@@ -20,23 +20,23 @@ module.exports = {
           { loader: 'style-loader' },
           { loader: 'file-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' }
-        ]
-      }
-    ]
+          { loader: 'sass-loader' },
+        ],
+      },
+    ],
   },
   plugins: [
     new webpack.SourceMapDevToolPlugin({ filename: '[name].js.map' }),
     new HtmlWebpackPlugin({
       title: '#EBMNAO - Devolvam o meu Flamengo!',
-      template: 'src/templates/index.html'
+      template: 'src/templates/index.html',
     }),
     new ImageMinPlugin({
       externalImages: {
         context: 'src',
         sources: glob.sync('src/images/**/*'),
-        destination: 'dist'
-      }
-    })
-  ]
+        destination: 'dist',
+      },
+    }),
+  ],
 };
