@@ -1,0 +1,11 @@
+.Header {
+  background-color: $black;
+  color: $white;
+  padding: 10px 15px;
+
+  &__Brand {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+}

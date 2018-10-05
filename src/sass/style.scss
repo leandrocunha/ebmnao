@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+$black: #000;
+$white: #fff;
+
+$Roboto: 'Roboto Slab', serif;
+
+body {
+  font-family: $Roboto;
+  font-weight: 400;
+}
+
+@import 'normalize/import-now';
+@import 'header';
+@import 'main';
