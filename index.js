@@ -12,4 +12,4 @@ app.use(bodyParser.json());
 
 app.get('*', (req, res) => res.sendFile(`${STATIC_PATH}/index.html`));
 
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+app.listen(PORT, () => console.log(`Listening on ${PORT}`)); //eslint-disable-line
