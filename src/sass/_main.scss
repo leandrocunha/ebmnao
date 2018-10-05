@@ -1,3 +1,50 @@
 .Main {
+  display: flex;
+  justify-content: center;
   padding: 15px;
+
+  &__Dropzone,
+  &__Output {
+    background-color: rgba($black, 0.1);
+    border: rgba($black, 0.2) 1px solid;
+    border-radius: 4px;
+    height: 300px;
+    margin: 0 10px;
+    width: 300px;
+
+    div {
+      align-items: center;
+      border: none !important;
+      display: flex;
+      height: 100% !important;
+      justify-content: center;
+      width: 100% !important;
+    }
+
+    p {
+      color: rgba($black, 0.5);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  &__Arrow,
+  &__Output {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__Arrow {
+    padding: 0 15px;
+  }
+
+  &__Output {
+    p {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
 }

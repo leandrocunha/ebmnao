@@ -1,0 +1,13 @@
+.Footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+  padding: 0 30px;
+
+  p {
+    color: rgba($black, 0.6);
+    line-height: 1.5;
+    max-width: 800px;
+  }
+}

@@ -1,12 +1,14 @@
 import watermarkjs from 'watermarkjs';
 
 function marcadagua(file) {
-  const watermark = './../images/moldura-ebm.png';
+  const watermark = './../images/moldura-ebm-2.png';
 
   watermarkjs([file, watermark])
     .image(watermarkjs.image.atPos(() => 0, () => 0, 1))
     .then((img) => {
-      document.getElementById('composite-image').appendChild(img);
+      const target = document.getElementById('ribbon');
+      target.removeChild(target.firstChild);
+      target.appendChild(img);
     });
 }
 
@@ -36,7 +38,7 @@ function resize(file) {
       const imgfinal = new Image();
       imgfinal.src = URI;
 
-      document.getElementById('composite-image').appendChild(imgfinal);
+      // document.getElementById('ribbon').appendChild(imgfinal);
       marcadagua(URI);
     };
     reader.onerror = error => console.log(error);
