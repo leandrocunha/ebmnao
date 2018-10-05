@@ -24,6 +24,16 @@ const App = () => (
         <p>Sua foto aparecerá aqui clique com o botão direto e escolha "Salvar como..."</p>
       </div>
     </div>
+    <div className="Github">
+      <a
+        className="github-button"
+        href="https://github.com/leandrocunha/ebmnao/fork"
+        data-size="large"
+        aria-label="Fork leandrocunha/ebmnao on GitHub"
+      >
+        Fork on Github
+      </a>
+    </div>
     <Footer />
   </section>
 );
