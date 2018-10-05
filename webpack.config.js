@@ -28,7 +28,7 @@ module.exports = {
   plugins: [
     new webpack.SourceMapDevToolPlugin({ filename: '[name].js.map' }),
     new HtmlWebpackPlugin({
-      title: '#EBMNAO - Devolvam o meu Flamengo!',
+      title: '#EBMNAO - Devolvam o nosso Flamengo vencedor!',
       template: 'src/templates/index.html',
     }),
     new ImageMinPlugin({
