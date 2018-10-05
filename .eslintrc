@@ -3,6 +3,8 @@
   "globals": {
     "document": true,
     "fetch": true,
+    "FileReader": true,
+    "Image": true,
     "window": true
   },
   "rules": {
