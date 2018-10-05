@@ -10,7 +10,7 @@
     "build-js-production": "webpack --config webpack.config.production.js",
     "build": "npm-run-all build-css-production build-js-production",
     "heroku-prebuild": "",
-    "heroku-postbuild": "webpack --config webpack.config.production.js",
+    "heroku-postbuild": "npm run build",
     "lint": "eslint *.js",
     "watch-css": "npm run build-css && node-sass-chokidar ./src/sass -o ./dist --watch --recursive",
     "start-js": "webpack-dev-server -d --config webpack.config.development.js",
